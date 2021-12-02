@@ -1,6 +1,28 @@
-# Joplin Plugin
+# Joplin Count Plugin
 
-This is a template to create a new Joplin plugin.
+This is a one-day-build Joplin plugin that allows you to count with taste.
+
+![ Screenshot of the application](./images/screenshot.png "Screenshot of the application")
+
+Is it sensible? ... Hm... Is it fun? ... Hell yeah!
+
+Almost a mandatory tool when doing stochastic experiments like Bernoulli trials.
+
+1. Install the plugin. For this you need to build it. Right now it is not a published plugin (not stable enough for that)
+2. Create a note and write `%count_plugin` in the first line
+3. Then write categories, that you want to count. One category per line with a colon and a number
+```
+Category 1 : 0
+Category 2 : 1
+```
+4. Left click will increment the number
+5. Right click will decrement it
+
+Note, that the counts in the note body are not updated in time. You need to click on another note and then return to it to see the latest update. This will be fixed when we can easily send data from the webview to the plugin, which is already supported by the current pre-release of Joplin, but not yet part of the mainstream API.
+
+## Why?
+
+I always wanted to play with the Joplin plugin API, since I am an impassioned user of this tool. I also needed to do a number of stochastic experiments by hand and wanted to take notes as stylishly as possible.
 
 The main two files you will want to look at are:
 
